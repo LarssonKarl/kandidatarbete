@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+<h2>Reviews</h2>
+<ul>
+    {% for obj in object_list %}
+    <li><a href="/reviews/{{ obj.slug }}"><h3>{{ obj.title }}</h3></a> </br> {{ obj.location }}</li>
+    {% endfor %}
+</ul>
+<a href="/reviews/create/"><h4>Make review</h4></a>
+<!-- {% render_bundle 'vendors' %}
+{% render_bundle 'App1' %} -->
+{% endblock content %}

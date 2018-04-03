@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+
+<h2>{{ object.title }}</h2>
+
+<p>{{ object.location }}</p>
+<p>{{ object.timestamp }}</p>
+<p>{{ object.text }}</p>
+<p>Last updated: {{ object.updated }}</p>
+
+<!-- {% render_bundle 'vendors' %}
+{% render_bundle 'App1' %} -->
+{% endblock content %}

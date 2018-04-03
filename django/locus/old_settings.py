@@ -8,16 +8,13 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-
+from locus.secretkey import *
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h*uu5u+_k+)(_z^i)4@h+nsozpt&0mz&e4bqhwz4^a8*3u#$%h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -35,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'djreact',
 ]
 
 MIDDLEWARE_CLASSES = [

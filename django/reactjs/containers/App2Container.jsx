@@ -22,11 +22,10 @@ const styles = {
 
 
 @Radium
-export default class App1Container extends React.Component {
+export default class App2Container extends React.Component {
   constructor(){
     super();
     this.state ={
-      redirectPath: ""
     }
   }
 
@@ -43,17 +42,10 @@ export default class App1Container extends React.Component {
         <div className="col-sm-1">
           </div>
         </div> */}
-        <Container noGutters>
-          <Row>
-            <Col><Headline>Sample AP!</Headline></Col>
-            <Col md={2} ><div style={[styles.column]}>.col</div></Col>
-            <Col md={2}><ReactButton redirectPath = "/review/">Review</ReactButton></Col>
-            <Col md={2}><ReactButton redirectPath = "/review/">Home</ReactButton></Col>
-            <Col md={2}><ReactButton redirectPath = "/review/">World Map</ReactButton></Col>
-            <Col md={2}><ReactButton redirectPath = "/review/">About Us</ReactButton></Col>
-            <Col md={2}><ReactButton redirectPath = "/review/">My Page</ReactButton></Col>
-          </Row>
-          </Container>
+        <form action='' method='post' name='form'>
+            <input type='textBox' name='title'> </input>
+        </form>
+
       </div>
     )
   }
